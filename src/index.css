@@ -74,6 +74,9 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  transform: scale(0.8); 
+  transform-origin: top left;
+  
 }
 
 h1 {
