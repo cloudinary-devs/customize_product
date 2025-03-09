@@ -23,7 +23,7 @@ function MonogramTshirtApp() {
   const [color, setColor] = useState('blue');
   const [errors, setErrors] = useState({ name: '', number: '' });
 
-  const textColor = ['black', 'maroon'].includes(color) ? 'white' : 'black';
+  const textColor = ['black', 'maroon', 'blue', 'purple', 'green'].includes(color) ? 'white' : 'black';
 
   const validateFields = (newName, newNumber) => {
     const newErrors = {
