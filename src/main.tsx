@@ -56,6 +56,11 @@ function MonogramTshirtApp() {
   return (
     <div className="main flex flex-col items-center p-6">
       <h1 className="text-2xl font-bold mb-4">Customize Your T-Shirt</h1>
+      {tshirtUrl ? (
+        <img src={tshirtUrl} alt="Monogrammed T-Shirt" className="w-64 h-64" />
+      ) : (
+        <p className="text-gray-500">Please enter valid details to generate T-shirt preview.</p>
+      )}
       <div className="flex flex-col gap-4 mb-4">
         <div className="flex items-center gap-4">
           <label className="font-semibold text-black text-lg">
@@ -94,11 +99,6 @@ function MonogramTshirtApp() {
           </select>
         </div>
       </div>
-      {tshirtUrl ? (
-        <img src={tshirtUrl} alt="Monogrammed T-Shirt" className="w-64 h-64" />
-      ) : (
-        <p className="text-gray-500">Please enter valid details to generate T-shirt preview.</p>
-      )}
     </div>
   );
 }
